@@ -1,34 +1,37 @@
 #site{
+
     .site_inner{
         padding: 16px;
+
         .site_title{
             position: sticky;
             left: 0;
             top: 70px;
-
             width: 70%;
             height: 5vw;
-            background-color: lightpink;
             font-size: 4vw;
-            font-weight: 700px;
+            font-weight: 700;
             border-bottom: 0.4vw solid var(--black100);
             margin-bottom: 100px;
+
             em{
                 font-size: 1.25rem;
                 font-weight: bold;
             }
         }
         .site_wrap{
+
             .site_item{
                 position: sticky;
+                left: 0;
                 height: 70vh;
                 @include flex-center;
                 text-align: center;
                 flex-direction: column;
-                
+
                 &.s1{
-                    background-color: var(--subBg100);
-                    top: 180px;
+                   background-color: var(--subBg100);
+                   top: 180px;
                 }
                 &.s2{
                     background-color: var(--subBg200);
@@ -42,6 +45,10 @@
                     background-color: var(--subBg400);
                     top: 240px;
                 }
+                &.s5{
+                    background-color: var(--subBg500);
+                    top: 260px;
+                }
 
                 .num{
                     position: absolute;
@@ -51,12 +58,14 @@
                 }
                 .text{
                     margin-bottom: 1rem;
+
                     >div{
                         font-size: 3vw;
-                        line-height: 1;
+                        line-height: 1.2;
                         text-transform: uppercase;
                         font-family: var(--mainEng-font);
                         text-decoration: underline;
+                        font-weight: 700;
                     }
                 }
                 .title{
@@ -64,10 +73,12 @@
                     font-family: var(--mainEng-font);
                 }
                 .btn{
+
                     >a{
                         text-decoration: underline;
                         margin: 0 3px;
                         font-size: 1.1rem;
+                        transition: all 0.3s;
 
                         &:hover{
                             color: orange;
@@ -79,16 +90,12 @@
                     left: 0;
                     bottom: 3%;
                     display: flex;
-                    justify-content: space-between;
-
+                    justify-content: space-between;                    
                     width: 98%;
-                    margin:1%;
+                    margin-left: 1%;
                     border-top: 1px solid var(--black100);
                     border-bottom: 1px solid var(--black100);
-
-                    >span{
-
-                    }
+                    >span{}
                 }
 
             }
